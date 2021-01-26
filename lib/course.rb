@@ -1,8 +1,8 @@
 class Course
-  attr_reader :name, :schedule, :Description
+  attr_reader :title, :schedule, :Description
   @@all = []
-  def initialize(name, schedule, description)
-    @name = name
+  def initialize(title, schedule, description)
+    @title = title
     @schedule = schedule
     @description = description
     @@all << self
@@ -12,6 +12,6 @@ class Course
     @@all
   end
 
-  
+
 
 end
