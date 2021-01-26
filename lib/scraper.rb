@@ -17,8 +17,8 @@ class Scraper
     get_courses.each { |course|
       c = Course.new
       c.title = course.css("h2").text
-      c.schedule = course.css("h2").text
-      c.description = course.at("p").text
+      c.schedule = course.css("date").text
+      c.description = course.css("p").text
     }
   end
 
