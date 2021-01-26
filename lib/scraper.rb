@@ -4,14 +4,9 @@ require 'open-uri'
 require_relative './course.rb'
 
 class Scraper
-  attr_reader :url
-
-  def initialize(url)
-    @url = url
-  end
 
   def get_page()
-    Nokogiri::HTML(url)
+    Nokogiri::HTML("http://learn-co-curriculum.github.io/site-for-scraping/courses")
   end
 
   def get_courses(html)
