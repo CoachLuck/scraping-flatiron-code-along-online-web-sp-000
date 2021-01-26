@@ -1,5 +1,5 @@
 class Course
-  attr_reader :title, :schedule, :Description
+  attr_accessor :title, :schedule, :Description
   @@all = []
   def initialize(title, schedule, description)
     @title = title
