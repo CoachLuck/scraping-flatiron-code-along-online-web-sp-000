@@ -10,7 +10,7 @@ class Scraper
   end
 
   def get_courses
-    get_page.css("#course-grid .post")
+    get_page.css("#course-grid .post").collect
   end
 
   def make_courses
