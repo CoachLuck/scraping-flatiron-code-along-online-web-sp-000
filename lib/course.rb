@@ -1,4 +1,4 @@
-class Course 
+class Course
   attr_reader :name, :schedule, :Description
 
   def initialize(name, schedule, description)
